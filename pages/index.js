@@ -144,6 +144,7 @@ const Home = (porps, ref) => {
       scrollTrigger: {
         trigger: ".hero__title--2",
         start: "center center",
+        pin: true,
         scrub: 0.5
       }
     });
