@@ -5,13 +5,10 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import sarmadiImg from './../public/image/alisarmadi2.jpg'
 // svgs
 import JsSvg_ringLeft from './../svg/js.svg'
-import JsSvg_Skill from './../svg/jsSkill.svg'
 import React_croos from './../svg/react.svg'
-import TsLogo from './../svg/tsLogo.svg'
-import SassSvg from './../svg/sass.svg'
-import HtmlSvg from './../svg/html.svg'
-import CssSvg from './../svg/css.svg'
-import ReduxSVG from './../svg/redux.svg'
+
+import About from '../components/layout/about';
+import Skills from '../components/layout/skills';
 
 
 const Home = (porps, ref) => {
@@ -40,13 +37,13 @@ const Home = (porps, ref) => {
       {
         opacity: 0,
         // objectPosition: "center 0%",
-        y: 100
+        // y: 100
       },
       {
         opacity: 1,
         duration: 2,
-        objectPosition: "center 15%",
-        y: 0,
+        // objectPosition: "center 15%",
+        // y: 0,
         ease: "expo.inOut"
       }
     );
@@ -107,7 +104,6 @@ const Home = (porps, ref) => {
         end: "bottom+=300 top+=10%",
         // pin: true,
         scrub: 0.25,
-        markers:true    
 
 
       }
@@ -128,6 +124,10 @@ const Home = (porps, ref) => {
 
     //   }
     // });
+
+   
+
+
     gsap.to(".hero__title--1", {
       xPercent: -50,
       scrollTrigger: {
@@ -135,6 +135,7 @@ const Home = (porps, ref) => {
         start: "center center",
         pin: true,
         scrub: 0.5,
+
 
       }
     });
@@ -144,9 +145,40 @@ const Home = (porps, ref) => {
       scrollTrigger: {
         trigger: ".hero__title--2",
         start: "center center",
-        pin: true,
-        scrub: 0.5
+        end: "bottom top",
+        pin: true,  
+        scrub: 0.5,
+        // markers: true
+
+
       }
+    });
+    gsap.to(".box", {
+      y: 350,
+      // x: "9vw",
+      ease: "power.in",
+      scrollTrigger: {
+        trigger: ".box",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+
+      }
+    });
+
+    gsap.utils.toArray('.skill_sections').forEach((section, index) => {
+      const w = section.querySelector('.wrapper');
+      const [x, xEnd] = index % 2 ? ['100%', (w.scrollWidth - section.offsetWidth) * -1] : [w.scrollWidth * -1, 0];
+      gsap.fromTo(w, { x }, {
+          x: xEnd,
+          scrollTrigger: {
+          trigger: section,
+          scrub: 0.5,
+          // markers: true
+        }
+      });
+
+
     });
 
   }, [])
@@ -174,6 +206,12 @@ const Home = (porps, ref) => {
           </span>
         </p>
 
+      </section>
+      <section className="section section--about">
+        <About /> 
+      </section>
+      <section className="section section--skills">
+        {/* <Skills /> */}
       </section>
       <section id='con' ></section>
 

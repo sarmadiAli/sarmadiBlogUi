@@ -20,6 +20,11 @@ body {
     height: 25000px;
 }
 
+
+/* 
+    GLOBAL STYLES
+ */
+
 .section {
     /* test position */
     position: absolute;
@@ -28,6 +33,17 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+.ring {
+    background-color: transparent;
+    mix-blend-mode: difference;
+    position: absolute;
+}
+
+
+/* 
+    FRIST SECTION
+ */
 
 .section--intro {
     position: relative;
@@ -55,12 +71,6 @@ body {
     mix-blend-mode: difference;
 }
 
-@media screen and (max-width: 900px) {
-    .cross_ٍreact_right {
-        left: 0;
-    }
-}
-
 .cross_ٍreact_left {
     width: 90px;
     height: 90px;
@@ -68,12 +78,6 @@ body {
     top: 200px;
     position: absolute;
     mix-blend-mode: difference;
-}
-
-.ring {
-    background-color: transparent;
-    mix-blend-mode: difference;
-    position: absolute;
 }
 
 .js__ring__left {
@@ -102,19 +106,14 @@ body {
     z-index: 2;
     mix-blend-mode: difference;
     margin: 0;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }
 
 .hero__title--2 {
     color: var(--yellow);
     -webkit-text-stroke: 1px white;
     margin-top: 0;
-    margin-bottom: 1.5rem;
-    mix-blend-mode: difference;
-}
-
-.hero__title--1 {
-    -webkit-text-stroke: 1px white;
+    /* margin-bottom: 1.5rem; */
     mix-blend-mode: difference;
 }
 
@@ -128,4 +127,158 @@ body {
 
 .hero__copy span {
     display: inline-block;
+}
+
+
+/* 
+    about css style
+ */
+
+.skill_sections {
+    overflow: hidden;
+}
+
+.wrapper.text {
+    display: flex;
+    align-items: flex-start;
+    mix-blend-mode: difference;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: left;
+    line-height: 1.5;
+    /* margin-left: 20px !important; */
+    justify-content: center;
+}
+
+.wrapper.Skill {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper.Skill li {
+    list-style: none;
+}
+
+.skill_sections {
+    overflow: hidden;
+}
+
+.skillCard {
+    width: 200px;
+    height: 200px;
+    border-radius: 15%;
+    margin-left: 10px;
+}
+
+
+/* 
+
+    about css style
+*/
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 300px;
+    mix-blend-mode: difference;
+    font-size: 1rem;
+    /* font-weight: 300; */
+    text-align: left;
+    line-height: 1.5;
+    width: 40%;
+}
+
+.section--text {
+    position: relative;
+    width: 100%;
+}
+
+
+/* 
+media query
+ */
+
+@media screen and (max-width: 770px) {
+    .cross_ٍreact_right {
+        left: 0;
+        width: 100px;
+    }
+    .cross_ٍreact_left {
+        right: 0;
+        width: 100px;
+    }
+    .js__ring__left {
+        width: 100px;
+        height: 100px;
+        left: 0%;
+        /* top: -100px; */
+    }
+    .js__ring__right {
+        right: 0;
+        bottom: 0;
+        width: 100px;
+        height: 100px;
+    }
+    .hero__title {
+        font-weight: 500;
+        font-size: 40px;
+    }
+    .hero__title {
+        letter-spacing: -0.0125em;
+        font-weight: 600;
+        font-size: 20px;
+        white-space: nowrap;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        line-height: 1;
+        position: relative;
+        z-index: 2;
+        mix-blend-mode: difference;
+        margin: 0;
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 300px;
+        mix-blend-mode: difference;
+        font-size: 1rem;
+        /* font-weight: 300; */
+        text-align: left;
+        /* line-height: 1.5; */
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cross_ٍreact_left {
+        display: none;
+    }
+    .js__ring__right {
+        display: none;
+    }
+    .cross_ٍreact_right {
+        display: none;
+    }
+    .js__ring__left {
+        display: none;
+    }
+    .hero__title {
+        font-weight: 500;
+        font-size: 40px;
+    }
+    .hero__title {
+        letter-spacing: -0.0125em;
+        font-weight: 600;
+        font-size: 19px;
+        white-space: nowrap;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        line-height: 1;
+        position: relative;
+        z-index: 2;
+        mix-blend-mode: difference;
+        margin: 0;
+    }
 }
