@@ -7,8 +7,8 @@ import sarmadiImg from './../public/image/alisarmadi2.jpg'
 import JsSvg_ringLeft from './../svg/js.svg'
 import React_croos from './../svg/react.svg'
 
-import About from '../components/layout/about';
-import Skills from '../components/layout/skills';
+import About from '../components/about';
+import Panels from '../components/panels';
 
 
 const Home = (porps, ref) => {
@@ -125,7 +125,7 @@ const Home = (porps, ref) => {
     //   }
     // });
 
-   
+
 
 
     gsap.to(".hero__title--1", {
@@ -146,7 +146,7 @@ const Home = (porps, ref) => {
         trigger: ".hero__title--2",
         start: "center center",
         end: "bottom top",
-        pin: true,  
+        pin: true,
         scrub: 0.5,
         // markers: true
 
@@ -166,21 +166,33 @@ const Home = (porps, ref) => {
       }
     });
 
-    gsap.utils.toArray('.skill_sections').forEach((section, index) => {
-      const w = section.querySelector('.wrapper');
-      const [x, xEnd] = index % 2 ? ['100%', (w.scrollWidth - section.offsetWidth) * -1] : [w.scrollWidth * -1, 0];
-      gsap.fromTo(w, { x }, {
-          x: xEnd,
-          scrollTrigger: {
-          trigger: section,
-          scrub: 0.5,
-          // markers: true
-        }
-      });
 
+const nTl = gsap.timeline();
 
-    });
-
+    const tl = gsap.timeline();
+    tl.from(".two", {xPercent: -100})
+    .from(".three", {xPercent: 100})
+    .from(".four", {yPercent: -100})
+    // .from('.one' ,{y : 350})
+    ScrollTrigger.create({
+      animation: tl,
+      trigger: ".instructions",
+      start: "top top",
+      end: "+=4000",
+      scrub: true,
+      pin: true,
+      anticipatePin: 1
+  });
+  ScrollTrigger.create({
+    animation: nTl,
+    trigger: ".one",
+    start: "right 1px",
+    end: "bottom bottom",
+    markers: false,
+    yoyo: true,
+    ease: "sine.inOut",
+    scrub: 1
+});
   }, [])
   return (
     <>
@@ -207,12 +219,13 @@ const Home = (porps, ref) => {
         </p>
 
       </section>
-      <section className="section section--about">
-        <About /> 
-      </section>
-      <section className="section section--skills">
-        {/* <Skills /> */}
-      </section>
+      {/* <section className="section section--about">
+        <About />
+      </section> */}
+      <div class="instructions">
+
+        <Panels />
+      </div>
       <section id='con' ></section>
 
 
