@@ -8,6 +8,8 @@ import JsSvg_Skill from './../svg/jsSkill.svg'
 import React_croos from './../svg/react.svg'
 import About from './about'
 import Skills from './skills'
+import TimeLine from './timeLine'
+import ProjectPanel from './projectPanel'
 
 export default function Panels() {
     return (
@@ -20,14 +22,14 @@ export default function Panels() {
             </div>
 
             <div class="panel three">
-                c
+                <TimeLine />
             </div>
             <div class="panel four">
-                d
+                <ProjectPanel />
             </div>
 
 
-     
+
         </>
 
     )

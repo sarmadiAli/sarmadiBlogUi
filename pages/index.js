@@ -226,7 +226,6 @@ const nTl = gsap.timeline();
 
         <Panels />
       </div>
-      <section id='con' ></section>
 
 
 
