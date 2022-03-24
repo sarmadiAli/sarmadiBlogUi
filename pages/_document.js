@@ -10,8 +10,8 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head >
-        <script src="https://kit.fontawesome.com/e03d7ac5cf.js" crossOrigin="anonymous"></script>
-
+        {/* <script src="https://kit.fontawesome.com/e03d7ac5cf.js" crossOrigin="anonymous"></script> */}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
 
         </Head>
         <body>

@@ -10,6 +10,7 @@ import About from './about'
 import Skills from './skills'
 import TimeLine from './timeLine'
 import ProjectPanel from './projectPanel'
+import ContectMe from './contectMe'
 
 export default function Panels() {
     return (
@@ -27,7 +28,6 @@ export default function Panels() {
             <div class="panel four">
                 <ProjectPanel />
             </div>
-
 
 
         </>

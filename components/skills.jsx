@@ -7,110 +7,44 @@ import ReduxSVG from './../svg/redux.svg'
 import JsSvg_Skill from './../svg/jsSkill.svg'
 import React_croos from './../svg/react.svg'
 import About from './about'
+import ProjectPanel from './projectPanel'
 
 export default function Skills() {
     return (
         <>
-            <div className="wrapperr">
-                <div className="container">
-                    <h3>Skills</h3>
-                    <div className="skills">
-                        <div className="details">
-                            <span>Javascript</span>
-                            <span>72%</span>
-                        </div>
-                        <div className="bar">
-                            <div id="javascript-bar"></div>
-                        </div>
-                    </div>
-                    <div className="skills">
-                        <div className="details">
-                            <span>React</span>
-                            <span>72%</span>
-                        </div>
-                        <div className="bar">
-                            <div id="javascript-bar"></div>
-                        </div>
-                    </div>  
+            <main class="grid">
+                <section class="content_box item1">
+                    <h1>Skills</h1>
+                </section>
+                <section class="card_box item2">
+                    <span class="icone devicon-materialui-plain  "></span>
+                </section>
+                <section class="card_box item3">
+               </section>
+                <section class="card_box item4">
+                    <span class="icone devicon-typescript-plain  colored"></span>
+                </section>
+                <section class="card_box item5">
+                    <span class="icone devicon-redux-original colored"></span>
+                </section>
+                <section class="card_box item7">
+                <span class="icone devicon-sass-original colored "></span>
 
-                    <div className="skills">
-                        <div className="details">
-                            <span>NextJs</span>
-                            <span>90%</span>
-                        </div>
-                        <div className="bar">
-                            <div id="html-bar"></div>
-                        </div>
-                    </div>
+                </section>
+                <section class="card_box item8">
 
-                    <div className="skills">
-                        <div className="details">
-                            <span>TypeScript</span>
-                            <span>90%</span>
-                        </div>
-                        <div className="bar">
-                            <div id="html-bar"></div>
-                        </div>
-                    </div>
-                    <div className="skills">
-                        <div className="details">
-                            <span>Sass</span>
-                            <span>90%</span>
-                        </div>
-                        <div className="bar">
-                            <div id="html-bar"></div>
-                        </div>
-                    </div>
-                    <div className="skills">
-                        <div className="details">
-                            <span>Redux & Redux-toolkit</span>
-                            <span>90%</span>
-                        </div>
-                        <div className="bar">
-                            <div id="html-bar"></div>
-                        </div>
-                    </div>
-                    <div className="skills">
-                        <div className="details">
-                            <span>material ui</span>
-                            <span>90%</span>
-                        </div>
-                        <div className="bar">
-                            <div id="html-bar"></div>
-                        </div>
-                    </div>
-                    <div className="skills">
-                        <div className="details">
-                            <span>Tailwind & BootStrap</span>
-                            <span>90%</span>
-                        </div>
-                        <div className="bar">
-                            <div id="html-bar"></div>
-                        </div>
-                    </div>
-                    
-                    <div className="skills">
-                        <div className="details">
-                            <span>HTML Css</span>
-                            <span>90%</span>
-                        </div>
-                        <div className="bar">
-                            <div id="html-bar"></div>
-                        </div>
-                    </div>
-                    <div className="skills">
-                        <div className="details">
-                            <span>Git</span>
-                            <span>90%</span>
-                        </div>
-                        <div className="bar">
-                            <div id="html-bar"></div>
-                        </div>
-                    </div>
-                </div>
+                    <span class="icone devicon-javascript-plain colored"></span>
+                </section>
+                <section class="card_box item9">
+                    <span class="icone devicon-nextjs-original  "></span>
+                </section>
+                <section class="card_box item10">
+                    <span class="icone devicon-css3-plain-wordmark colored"></span>
+                </section>
+                <section class="card_box item11">
 
-            </div>
-
+                </section>
+            </main>
         </>
 
     )

@@ -1,22 +1,6 @@
 import React from 'react'
 
 
-const Box = (props) => {
-  return (
-    <div className="boxProject">
-      <div className="boxProject__title">
-        <h3>
-          Git an
-        </h3>
-      </div>
-      <div className="boxProject__description">
-        <p>
-          Git is a version control system for tracking changes in computer files and coordinating work on those files among multiple people.
-        </p>
-      </div>
-    </div>
-  )
-}
 
 export default function ProjectPanel() {
   return (
@@ -27,21 +11,99 @@ export default function ProjectPanel() {
           {/* <p>By animating a few CSS paint & composite properties, we can create fun interactions on hover & focus</p> */}
         </section>
         <section class="card_box item2">
-          <h2>Hover the card_boxs</h2>
+        <div>
+            <h3>
+             Un Project
+            </h3>
+            <p>
+              NextJs.redux
+            </p>
+          </div>
+          <a href="" >
+            +Link
+          </a>
         </section>
-        <section class="card_box item3"></section>
-        <section class="card_box item4"></section>
+        <section class="card_box item3">
+         
+        </section>
+        <section class="card_box item4">
+          <div>
+            <h3>
+              Iranian electrical machine : The second  phase of the project
+            </h3>
+            <p>
+              react.redux..redux-toolkit and matrial ui--nodejs realtime
+            </p>
+          </div>
+          <a href="" >
+            +Link
+          </a>
+        </section>
         <section class="card_box item5">
-          <h2>because interactions make it more fun</h2>
+          <div>
+            <h3>
+              fadak project
+            </h3>
+            <p>
+              react__redux__redux-toolkit__matrial ui__
+            </p>
+          </div>
+          <a href="" >
+            +Link
+          </a>
         </section>
-        <section class="card_box item7"></section>
+        <section class="card_box item7">
+          <div>
+            <h3>
+              Sima Project
+            </h3>
+            <p>
+              react__redux__redux-toolkit__matrial ui__
+            </p>
+          </div>
+          <a href="" >
+            +Link
+          </a>
+        </section>
         <section class="card_box item8">
-          <h2>animating the shadow on the pseudo element makes it pop out</h2>
+          <div>
+            <h3>
+              Iranian electrical machine :   The first  phase of the project
+            </h3>
+            <p>
+            </p>
+          </div>
+          <a href="" >
+            +Link
+          </a>
         </section>
-        <section class="card_box item9"></section>
-        <section class="card_box item10"></section>
+        <section class="card_box item9">
+          <div>
+            <h3>
+              React teacher
+            </h3>
+            <p>
+              react__redux__redux-toolkit__matrial ui__
+            </p>
+          </div>
+          <a href="" >
+            +Link
+          </a>
+        </section>
+        <section class="card_box item10">
+          <div>
+            <h3>
+              Sima Project
+            </h3>
+            <p>
+            </p>
+          </div>
+          <a href="" >
+            +Link
+          </a>
+        </section>
         <section class="card_box item11">
-          <h2>add a :focus state too!</h2>
+         
         </section>
       </main>
     </>

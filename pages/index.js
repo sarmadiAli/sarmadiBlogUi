@@ -36,14 +36,11 @@ const Home = (porps, ref) => {
       img.current,
       {
         opacity: 0,
-        // objectPosition: "center 0%",
-        // y: 100
       },
       {
         opacity: 1,
         duration: 2,
-        // objectPosition: "center 15%",
-        // y: 0,
+        
         ease: "expo.inOut"
       }
     );
@@ -108,22 +105,7 @@ const Home = (porps, ref) => {
 
       }
     });
-    // gsap.to(".ring--right", {
 
-    //   // top:'400px ',
-    //   scale: 4,
-    //   ease: "power4",
-    //   // transformOrigin: "center center",
-    //   scrollTrigger: {
-    //     trigger: ".ring--right",
-    //     start: "top center",
-    //     end: "bottom+=300 200px",
-    //     pin: true,
-    //     scrub: 0.25,
-    //     // markers:true
-
-    //   }
-    // });
 
 
 
@@ -173,6 +155,7 @@ const nTl = gsap.timeline();
     tl.from(".two", {xPercent: -100})
     .from(".three", {xPercent: 100})
     .from(".four", {yPercent: -100})
+    .from(".five", {xPercent: -100})
     // .from('.one' ,{y : 350})
     ScrollTrigger.create({
       animation: tl,
